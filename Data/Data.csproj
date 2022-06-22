@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20210221204641_users_roles.cs" />
+    <Compile Remove="Migrations\20210221204641_users_roles.Designer.cs" />
+    <Compile Remove="Migrations\20210222133338_Users_roles.cs" />
+    <Compile Remove="Migrations\20210222133338_Users_roles.Designer.cs" />
+    <Compile Remove="Migrations\20210315203703_test.cs" />
+    <Compile Remove="Migrations\20210315203703_test.Designer.cs" />
+    <Compile Remove="Migrations\20210326105804_addDiscountToItem.cs" />
+    <Compile Remove="Migrations\20210326105804_addDiscountToItem.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.12">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
